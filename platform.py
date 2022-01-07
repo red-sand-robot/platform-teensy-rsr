@@ -18,7 +18,7 @@ import platform
 from platformio.managers.platform import PlatformBase
 
 
-class TeensyPlatform(PlatformBase):
+class TeensyPlatform_RSR(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         if variables.get("board"):

@@ -1,6 +1,6 @@
 {
-  "name": "teensy",
-  "title": "Teensy",
+  "name": "teensy-rsr",
+  "title": "Teensy RSR",
   "description": "Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.",
   "homepage": "https://www.pjrc.com/teensy",
   "license": "Apache-2.0",
@@ -22,7 +22,7 @@
   "version": "4.14.0",
   "frameworks": {
     "arduino": {
-      "package": "framework-arduinoteensy",
+      "package": "framework-arduinoteensy-rsr",
       "script": "builder/frameworks/arduino.py"
     },
     "mbed": {
@@ -44,11 +44,10 @@
       "owner": "platformio",
       "version": "~1.50401.0"
     },
-    "framework-arduinoteensy": {
+    "framework-arduinoteensy-rsr": {
       "type": "framework",
       "optional": true,
-      "owner": "platformio",
-      "version": "~1.156.0"
+      "version": "https://github.com/red-sand-robot/framework-arduinoteensy-rsr.git"
     },
     "framework-mbed": {
       "type": "framework",

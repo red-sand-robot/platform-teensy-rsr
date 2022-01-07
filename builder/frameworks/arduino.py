@@ -31,8 +31,8 @@ from SCons.Script import DefaultEnvironment
 env = DefaultEnvironment()
 platform = env.PioPlatform()
 
-FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoteensy")
-FRAMEWORK_VERSION = platform.get_package_version("framework-arduinoteensy")
+FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoteensy-rsr")
+FRAMEWORK_VERSION = platform.get_package_version("framework-arduinoteensy-rsr")
 BUILD_CORE = env.BoardConfig().get("build.core")
 
 assert isdir(FRAMEWORK_DIR)
@@ -58,6 +58,7 @@ BUILTIN_USB_FLAGS = (
     "USB_MTPDISK",
     "USB_RAWHID",
     "USB_FLIGHTSIM",
+    "USB_GAMEPAD_IMU_ADDON"
     "USB_FLIGHTSIM_JOYSTICK",
     "USB_EVERYTHING",
     "USB_DISABLED",
